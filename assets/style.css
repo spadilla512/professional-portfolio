@@ -1,0 +1,139 @@
+/* Universal Selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Element Selectors */
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgb(213, 201, 185);
+    border-bottom: 10px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    padding: 10px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+figure {
+    position: relative;
+    width: 100%;
+    border: 7px solid rgb(213, 201, 185);
+}
+
+figcaption {
+    background-color: rgb(213, 201, 185);
+    padding: 10px;
+    position: absolute;
+    bottom: 90px;
+}
+
+/* Class Selectors */
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-bottom: 100px;
+    margin: 50px auto 0px auto;
+    width: 100%;
+    gap: 40px;
+}
+
+.about-me,
+.work,
+.contact-me {
+    color: black;
+    font-size: 20px;
+    text-align: end;
+    padding-right: 15px;
+}
+
+.description {
+    margin-top: 50px;
+    margin-right: 50px
+}
+
+.example1 {
+    grid-area: example1;
+}
+.example2 {
+    grid-area: example2;
+}
+.example3 {
+    grid-area: example3;
+}
+.example4 {
+    grid-area: example4;
+}
+.example5 {
+    grid-area: example5;
+}
+
+ul.bottomNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+.bottomNav a {
+    display: inline-block;
+    color: rgb(213, 201, 185);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.profile {
+    float: left;
+    border: groove rgb(213, 201, 185);
+    border-width: 10px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+/* id selectors */
+#projects {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 314px 214px 214px;
+    grid-template-areas: 
+        "example1 example1"
+        "example2 example3"
+        "example4 example5";
+    gap: 20px;
+}
+
+#projects a {
+    color: black;
+    text-decoration: none;
+}
+
+#projects img {
+    object-fit: cover;
+    width: 100%;
+}
