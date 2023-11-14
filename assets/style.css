@@ -48,7 +48,7 @@ nav a {
 figure {
     position: relative;
     width: 100%;
-    border: 7px solid var(--theme);
+    border: 10px solid var(--theme);
 }
 
 figcaption {
@@ -130,7 +130,7 @@ ul.bottomNav {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 314px 214px 214px;
+    grid-template-rows: 318px 218px 218px;
     grid-template-areas: 
         "example1 example1"
         "example2 example3"
